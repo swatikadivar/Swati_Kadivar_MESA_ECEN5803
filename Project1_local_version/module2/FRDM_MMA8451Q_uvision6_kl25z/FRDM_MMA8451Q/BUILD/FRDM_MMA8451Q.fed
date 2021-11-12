@@ -1,0 +1,350 @@
+;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Mon Oct 04 16:37:05 2021
+;VERSION 0.2
+;FILE FileBase.o
+_ZN4mbed8FileBase11getPathTypeEv <= LINKER_INLINED
+_ZN4mbed8FileBase14set_as_defaultEv <= USED 0
+_ZN4mbed8FileBase3getEi <= USED 0
+_ZN4mbed8FileBase7getNameEv <= USED 0
+_ZN4mbed8FileBaseC1EPKcNS_8PathTypeE <= USED 0
+_ZN4mbed8FileBaseD0Ev <= USED 0
+_ZN4mbed8FileBaseD1Ev <= USED 0
+__asm___12_FileBase_cpp_db7ac688___Z7__REV16j <= USED 0
+__asm___12_FileBase_cpp_db7ac688___Z7__REVSHs <= USED 0
+;FILE FileHandle.o
+_ZN4mbed10FileHandle4sizeEv <= USED 0
+__asm___14_FileHandle_cpp_a4756d98___Z7__REV16j <= USED 0
+__asm___14_FileHandle_cpp_a4756d98___Z7__REVSHs <= USED 0
+;FILE FilePath.o
+_ZN4mbed8FilePath12isFileSystemEv <= USED 0
+_ZN4mbed8FilePath8fileNameEv <= LINKER_INLINED
+__asm___12_FilePath_cpp_fca239a6___Z7__REV16j <= USED 0
+__asm___12_FilePath_cpp_fca239a6___Z7__REVSHs <= USED 0
+;FILE I2C.o
+_ZN4mbed3I2C4readEi <= USED 0
+_ZN4mbed3I2C4stopEv <= USED 0
+_ZN4mbed3I2C5startEv <= USED 0
+_ZN4mbed3I2C5writeEi <= USED 0
+_ZN4mbed3I2C6aquireEv <= USED 0
+_ZN4mbed3I2C9frequencyEi <= USED 0
+__asm___7_I2C_cpp_9f686375___Z7__REV16j <= USED 0
+__asm___7_I2C_cpp_9f686375___Z7__REVSHs <= USED 0
+;FILE PeripheralPins.o
+__asm___16_PeripheralPins_c_bdcd2e91____REV16 <= USED 0
+__asm___16_PeripheralPins_c_bdcd2e91____REVSH <= USED 0
+;FILE Timer.o
+_ZN4mbed5Timer23read_high_resolution_usEv <= USED 0
+_ZN4mbed5Timer5resetEv <= USED 0
+_ZN4mbed5Timer7read_msEv <= USED 0
+_ZN4mbed5Timer7read_usEv <= USED 0
+_ZN4mbed5Timer9slicetimeEv <= USED 0
+_ZN4mbed5TimerC1EPK13ticker_data_t <= USED 0
+_ZN4mbed5TimercvfEv <= USED 0
+__asm___9_Timer_cpp_f7c83b63___Z7__REV16j <= USED 0
+__asm___9_Timer_cpp_f7c83b63___Z7__REVSHs <= USED 0
+;FILE analogin_api.o
+__asm___14_analogin_api_c_6fa4b4f0____REV16 <= USED 0
+__asm___14_analogin_api_c_6fa4b4f0____REVSH <= USED 0
+analogin_init <= USED 0
+analogin_read <= USED 0
+analogin_read_u16 <= USED 0
+;FILE analogout_api.o
+__asm___15_analogout_api_c_bff03740____REV16 <= USED 0
+__asm___15_analogout_api_c_bff03740____REVSH <= USED 0
+analogout_free <= USED 0
+analogout_init <= USED 0
+analogout_read <= USED 0
+analogout_read_u16 <= USED 0
+analogout_write <= USED 0
+analogout_write_u16 <= USED 0
+;FILE except.o
+BusFault_Handler <= USED 0
+MemManage_Handler <= USED 0
+UsageFault_Handler <= USED 0
+;FILE gpio_api.o
+__asm___10_gpio_api_c_gpio_set____REV16 <= USED 0
+__asm___10_gpio_api_c_gpio_set____REVSH <= USED 0
+gpio_set <= USED 0
+;FILE gpio_irq_api.o
+__asm___14_gpio_irq_api_c_2e289926____REV16 <= USED 0
+__asm___14_gpio_irq_api_c_2e289926____REVSH <= USED 0
+gpio_irqA <= USED 0
+gpio_irqD <= USED 0
+gpio_irq_disable <= USED 0
+gpio_irq_enable <= USED 0
+gpio_irq_free <= USED 0
+gpio_irq_init <= USED 0
+gpio_irq_set <= USED 0
+;FILE i2c_api.o
+__asm___9_i2c_api_c_i2c_init____REV16 <= USED 0
+__asm___9_i2c_api_c_i2c_init____REVSH <= USED 0
+i2c_byte_read <= USED 0
+i2c_byte_write <= USED 0
+i2c_reset <= USED 0
+i2c_slave_address <= USED 0
+i2c_slave_mode <= USED 0
+i2c_slave_read <= USED 0
+i2c_slave_receive <= USED 0
+i2c_slave_write <= USED 0
+i2c_start <= USED 0
+;FILE main.o
+__asm___8_main_cpp_tick___Z7__REV16j <= USED 0
+__asm___8_main_cpp_tick___Z7__REVSHs <= USED 0
+;FILE mbed_assert.o
+;FILE mbed_board.o
+__asm___12_mbed_board_c_e383c840____REV16 <= USED 0
+__asm___12_mbed_board_c_e383c840____REVSH <= USED 0
+mbed_error_vfprintf <= USED 0
+mbed_error_vprintf <= USED 0
+;FILE mbed_critical.o
+__asm___15_mbed_critical_c_f6655aea____REV16 <= USED 0
+__asm___15_mbed_critical_c_f6655aea____REVSH <= USED 0
+core_util_atomic_cas_ptr <= USED 0
+core_util_atomic_cas_u16 <= USED 0
+core_util_atomic_cas_u32 <= USED 0
+core_util_atomic_cas_u8 <= USED 0
+core_util_atomic_decr_ptr <= USED 0
+core_util_atomic_decr_u32 <= USED 0
+core_util_atomic_decr_u8 <= USED 0
+core_util_atomic_flag_clear <= USED 0
+core_util_atomic_incr_ptr <= USED 0
+core_util_atomic_incr_u32 <= USED 0
+core_util_atomic_incr_u8 <= USED 0
+core_util_in_critical_section <= USED 0
+;FILE mbed_critical_section_api.o
+__asm___27_mbed_critical_section_api_c____REV16 <= USED 0
+__asm___27_mbed_critical_section_api_c____REVSH <= USED 0
+hal_in_critical_section <= USED 0
+;FILE mbed_error.o
+__asm___12_mbed_error_c_8d3691be____REV16 <= USED 0
+__asm___12_mbed_error_c_8d3691be____REVSH <= USED 0
+error <= USED 0
+mbed_clear_all_errors <= USED 0
+mbed_error_initialize <= USED 0
+mbed_error_reboot_callback <= USED 0
+mbed_get_error_count <= USED 0
+mbed_get_first_error <= USED 0
+mbed_get_first_error_info <= USED 0
+mbed_get_last_error <= USED 0
+mbed_get_last_error_info <= USED 0
+mbed_get_reboot_error_info <= USED 0
+mbed_make_error <= USED 0
+mbed_reset_reboot_count <= USED 0
+mbed_reset_reboot_error_info <= USED 0
+mbed_set_error_hook <= USED 0
+mbed_warning <= USED 0
+;FILE mbed_fault_handler.o
+__asm___20_mbed_fault_handler_c_2950165d____REV16 <= USED 0
+__asm___20_mbed_fault_handler_c_2950165d____REVSH <= USED 0
+mbed_get_reboot_fault_context <= USED 0
+;FILE mbed_gpio.o
+__asm___11_mbed_gpio_c_de692169____REV16 <= USED 0
+__asm___11_mbed_gpio_c_de692169____REVSH <= USED 0
+gpio_init_in_ex <= USED 0
+gpio_init_out_ex <= USED 0
+;FILE mbed_interface.o
+__asm___16_mbed_interface_c_a6b6031c____REV16 <= USED 0
+__asm___16_mbed_interface_c_a6b6031c____REVSH <= USED 0
+mbed_interface_disconnect <= USED 0
+mbed_interface_powerdown <= USED 0
+mbed_interface_reset <= USED 0
+mbed_interface_uid <= USED 0
+mbed_mac_address <= USED 0
+mbed_reset <= USED 0
+mbed_uid <= USED 0
+;FILE mbed_overrides.o
+__asm___16_mbed_overrides_c_bb8ca80c____REV16 <= USED 0
+__asm___16_mbed_overrides_c_bb8ca80c____REVSH <= USED 0
+;FILE mbed_pinmap_common.o
+__asm___20_mbed_pinmap_common_c_1647ef0e____REV16 <= USED 0
+__asm___20_mbed_pinmap_common_c_1647ef0e____REVSH <= USED 0
+pinmap_find_function <= USED 0
+pinmap_find_peripheral <= USED 0
+pinmap_function <= USED 0
+;FILE mbed_poll.o
+_ZN4mbed4pollEPNS_6pollfhEji <= USED 0
+__asm___13_mbed_poll_cpp_d7e32d02___Z7__REV16j <= USED 0
+__asm___13_mbed_poll_cpp_d7e32d02___Z7__REVSHs <= USED 0
+;FILE mbed_retarget.o
+_Z18lp_ticker_get_infov <= USED 0
+_ZN12DirectSerial4readEPvj <= USED 0
+_ZN12DirectSerialC1E7PinNameS0_i <= USED 0
+_ZN12DirectSerialD0Ev <= USED 0
+_ZN4Sink4readEPvj <= USED 0
+_ZN4Sink4seekEli <= USED 0
+_ZN4Sink4sizeEv <= USED 0
+_ZN4Sink5closeEv <= USED 0
+_ZN4Sink5writeEPKvj <= USED 0
+_ZN4Sink6isattyEv <= USED 0
+_ZN4SinkD0Ev <= USED 0
+_ZN4SinkD1Ev <= USED 0
+_ZN4mbed10FileHandle12set_blockingEb <= USED 0
+_ZN4mbed10FileHandle4flenEv <= USED 0
+_ZN4mbed10FileHandle4tellEv <= USED 0
+_ZN4mbed10FileHandle5fsyncEv <= USED 0
+_ZN4mbed10FileHandle5lseekEli <= USED 0
+_ZN4mbed10FileHandle5sigioENS_8CallbackIFvvEEE <= USED 0
+_ZN4mbed10FileHandle6rewindEv <= USED 0
+_ZN4mbed10bind_to_fdEPNS_10FileHandleE <= USED 0
+_ZN4mbed17remove_filehandleEPNS_10FileHandleE <= USED 0
+_ZN4mbed21mbed_override_consoleEi <= LINKER_INLINED
+_ZN4mbed26mbed_set_unbuffered_streamEPSt6__FILE <= USED 0
+_ZN4mbed28mbed_target_override_consoleEi <= LINKER_INLINED
+_ZN4mbed6fdopenEPNS_10FileHandleEPKc <= USED 0
+_ZNK12DirectSerial4pollEs <= USED 0
+_ZNK4mbed10FileHandle11is_blockingEv <= USED 0
+_ZNK4mbed10FileHandle4pollEs <= USED 0
+_ZdaPv <= USED 0
+_ZdlPv <= USED 0
+_Znaj <= USED 0
+_ZnajRKSt9nothrow_t <= USED 0
+_Znwj <= USED 0
+_ZnwjRKSt9nothrow_t <= USED 0
+__aeabi_atexit <= LINKER_INLINED
+__asm___17_mbed_retarget_cpp_d318b6ef___Z7__REV16j <= USED 0
+__asm___17_mbed_retarget_cpp_d318b6ef___Z7__REVSHs <= USED 0
+__cxa_atexit <= USED 0
+__cxa_finalize <= LINKER_INLINED
+__cxa_guard_abort <= USED 0
+_sys_command_string <= LINKER_INLINED
+_sys_ensure <= USED 0
+_sys_read <= USED 0
+clock <= USED 0
+close <= USED 0
+closedir <= USED 0
+fcntl <= USED 0
+fdopen <= USED 0
+fstat <= USED 0
+fsync <= USED 0
+isatty <= USED 0
+lseek <= USED 0
+mkdir <= USED 0
+opendir <= USED 0
+poll <= USED 0
+read <= USED 0
+readdir <= USED 0
+remove <= USED 0
+rename <= USED 0
+rewinddir <= USED 0
+seekdir <= USED 0
+stat <= USED 0
+statvfs <= USED 0
+telldir <= USED 0
+tmpfile <= USED 0
+tmpnam <= USED 0
+;FILE mbed_sdk_boot.o
+__asm___15_mbed_sdk_boot_c_61f26557____REV16 <= USED 0
+__asm___15_mbed_sdk_boot_c_61f26557____REVSH <= USED 0
+mbed_copy_nvic <= USED 0
+mbed_main <= LINKER_INLINED
+mbed_sdk_init <= LINKER_INLINED
+software_init_hook_rtos <= USED 0
+;FILE mbed_semihost_api.o
+__asm___19_mbed_semihost_api_c_a244ae97____REV16 <= USED 0
+__asm___19_mbed_semihost_api_c_a244ae97____REVSH <= USED 0
+semihost_disabledebug <= USED 0
+semihost_powerdown <= USED 0
+semihost_reset <= USED 0
+semihost_uid <= USED 0
+semihost_vbus <= USED 0
+;FILE mbed_sleep_manager.o
+__asm___20_mbed_sleep_manager_c_0b406251____REV16 <= USED 0
+__asm___20_mbed_sleep_manager_c_0b406251____REVSH <= USED 0
+mbed_time_deepsleep <= USED 0
+mbed_time_idle <= USED 0
+mbed_time_sleep <= USED 0
+mbed_uptime <= USED 0
+sleep_manager_can_deep_sleep <= USED 0
+sleep_manager_can_deep_sleep_test_check <= USED 0
+sleep_manager_sleep_auto <= USED 0
+;FILE mbed_ticker_api.o
+__asm___17_mbed_ticker_api_c_7da7fe6e____REV16 <= USED 0
+__asm___17_mbed_ticker_api_c_7da7fe6e____REVSH <= USED 0
+_ticker_match_interval_passed <= USED 0
+ticker_get_next_timestamp <= USED 0
+ticker_insert_event <= USED 0
+ticker_insert_event_us <= USED 0
+ticker_remove_event <= USED 0
+ticker_resume <= USED 0
+ticker_set_handler <= USED 0
+ticker_suspend <= USED 0
+;FILE mbed_us_ticker_api.o
+__asm___20_mbed_us_ticker_api_c_3218d27f____REV16 <= USED 0
+__asm___20_mbed_us_ticker_api_c_3218d27f____REVSH <= USED 0
+set_us_ticker_irq_handler <= USED 0
+;FILE mbed_wait_api_no_rtos.o
+__asm___23_mbed_wait_api_no_rtos_c_wait____REV16 <= USED 0
+__asm___23_mbed_wait_api_no_rtos_c_wait____REVSH <= USED 0
+wait_ms <= USED 0
+;FILE mma8451q.o
+_ZN8MMA8451Q13getAccAllAxisEPf <= USED 0
+_ZN8MMA8451Q9getWhoAmIEv <= USED 0
+_ZN8MMA8451QD1Ev <= USED 0
+__asm___12_MMA8451Q_cpp_a2dbf210___Z7__REV16j <= USED 0
+__asm___12_MMA8451Q_cpp_a2dbf210___Z7__REVSHs <= USED 0
+;FILE pinmap.o
+__asm___8_pinmap_c_b94f9c16____REV16 <= USED 0
+__asm___8_pinmap_c_b94f9c16____REVSH <= USED 0
+;FILE port_api.o
+__asm___10_port_api_c_port_pin____REV16 <= USED 0
+__asm___10_port_api_c_port_pin____REVSH <= USED 0
+port_dir <= USED 0
+port_init <= USED 0
+port_mode <= USED 0
+port_pin <= USED 0
+port_read <= USED 0
+port_write <= USED 0
+;FILE pwmout_api.o
+__asm___12_pwmout_api_c_56477a33____REV16 <= USED 0
+__asm___12_pwmout_api_c_56477a33____REVSH <= USED 0
+pwmout_free <= USED 0
+pwmout_period <= USED 0
+pwmout_period_ms <= USED 0
+pwmout_pulsewidth <= USED 0
+pwmout_pulsewidth_ms <= USED 0
+pwmout_pulsewidth_us <= USED 0
+pwmout_read <= USED 0
+;FILE serial_api.o
+__asm___12_serial_api_c_a4cba8ab____REV16 <= USED 0
+__asm___12_serial_api_c_a4cba8ab____REVSH <= USED 0
+serial_break_clear <= USED 0
+serial_break_set <= USED 0
+serial_clear <= USED 0
+serial_free <= USED 0
+serial_getc <= USED 0
+serial_irq_handler <= USED 0
+serial_irq_set <= USED 0
+serial_pinout_tx <= USED 0
+serial_readable <= USED 0
+serial_writable <= USED 0
+uart0_irq <= USED 0
+uart1_irq <= USED 0
+uart2_irq <= USED 0
+;FILE sleep.o
+__asm___7_sleep_c_652c3e35____REV16 <= USED 0
+__asm___7_sleep_c_652c3e35____REVSH <= USED 0
+hal_deepsleep <= USED 0
+hal_sleep <= USED 0
+;FILE spi_api.o
+__asm___9_spi_api_c_spi_init____REV16 <= USED 0
+__asm___9_spi_api_c_spi_init____REVSH <= USED 0
+spi_format <= USED 0
+spi_free <= USED 0
+spi_frequency <= USED 0
+spi_init <= USED 0
+spi_master_block_write <= USED 0
+spi_master_write <= USED 0
+spi_slave_read <= USED 0
+spi_slave_receive <= USED 0
+spi_slave_write <= USED 0
+;FILE startup_MKL25Z4.o
+;FILE system_MKL25Z4.o
+SystemCoreClockUpdate <= USED 0
+__asm___16_system_MKL25Z4_c_5d646a67____REV16 <= USED 0
+__asm___16_system_MKL25Z4_c_5d646a67____REVSH <= USED 0
+;FILE tsisensor.o
+_ZN9TSISensor12readDistanceEv <= USED 0
+__asm___13_TSISensor_cpp_caadfea6___Z7__REV16j <= USED 0
+__asm___13_TSISensor_cpp_caadfea6___Z7__REVSHs <= USED 0
+;FILE us_ticker.o
+__asm___11_us_ticker_c_c20f6365____REV16 <= USED 0
+__asm___11_us_ticker_c_c20f6365____REVSH <= USED 0

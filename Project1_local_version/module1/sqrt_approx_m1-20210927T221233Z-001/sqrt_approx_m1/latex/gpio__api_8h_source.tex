@@ -1,0 +1,57 @@
+\hypertarget{gpio__api_8h_source}{}\doxysection{gpio\+\_\+api.\+h}
+\label{gpio__api_8h_source}\index{sqrt\_approx/mbed/gpio\_api.h@{sqrt\_approx/mbed/gpio\_api.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_GPIO\_API\_H}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_GPIO\_API\_H}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}device.h"{}}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00022}00022 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00023}00023 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00025}00025 \textcolor{comment}{/* Set the given pin as GPIO}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00026}00026 \textcolor{comment}{ * @param pin The pin to be set as GPIO}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00027}00027 \textcolor{comment}{ * @return The GPIO port mask for this pin}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00028}00028 \textcolor{comment}{ **/}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00029}00029 uint32\_t gpio\_set(PinName pin);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00031}00031 \textcolor{comment}{/* GPIO object */}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00032}00032 \textcolor{keywordtype}{void} gpio\_init(\mbox{\hyperlink{structgpio__t}{gpio\_t}} *obj, PinName pin);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00034}00034 \textcolor{keywordtype}{void} gpio\_mode (\mbox{\hyperlink{structgpio__t}{gpio\_t}} *obj, PinMode mode);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00035}00035 \textcolor{keywordtype}{void} gpio\_dir  (\mbox{\hyperlink{structgpio__t}{gpio\_t}} *obj, PinDirection direction);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00037}00037 \textcolor{keywordtype}{void} gpio\_write(\mbox{\hyperlink{structgpio__t}{gpio\_t}} *obj, \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00038}00038 \textcolor{keywordtype}{int}  gpio\_read (\mbox{\hyperlink{structgpio__t}{gpio\_t}} *obj);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00040}00040 \textcolor{comment}{// the following set of functions are generic and are implemented in the common gpio.c file}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00041}00041 \textcolor{keywordtype}{void} gpio\_init\_in(\mbox{\hyperlink{structgpio__t}{gpio\_t}}* gpio, PinName pin);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00042}00042 \textcolor{keywordtype}{void} gpio\_init\_in\_ex(\mbox{\hyperlink{structgpio__t}{gpio\_t}}* gpio, PinName pin, PinMode mode);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00043}00043 \textcolor{keywordtype}{void} gpio\_init\_out(\mbox{\hyperlink{structgpio__t}{gpio\_t}}* gpio, PinName pin);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00044}00044 \textcolor{keywordtype}{void} gpio\_init\_out\_ex(\mbox{\hyperlink{structgpio__t}{gpio\_t}}* gpio, PinName pin, \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00045}00045 \textcolor{keywordtype}{void} gpio\_init\_inout(\mbox{\hyperlink{structgpio__t}{gpio\_t}}* gpio, PinName pin, PinDirection direction, PinMode mode, \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00047}00047 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00048}00048 \}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00049}00049 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{gpio__api_8h_source_l00051}00051 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

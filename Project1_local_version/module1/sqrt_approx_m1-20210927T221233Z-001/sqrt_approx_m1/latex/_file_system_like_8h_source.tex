@@ -1,0 +1,58 @@
+\hypertarget{_file_system_like_8h_source}{}\doxysection{File\+System\+Like.\+h}
+\label{_file_system_like_8h_source}\index{sqrt\_approx/mbed/FileSystemLike.h@{sqrt\_approx/mbed/FileSystemLike.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_FILESYSTEMLIKE\_H}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_FILESYSTEMLIKE\_H}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}platform.h"{}}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00021}00021 \textcolor{preprocessor}{\#include "{}FileBase.h"{}}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00022}00022 \textcolor{preprocessor}{\#include "{}FileHandle.h"{}}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00023}00023 \textcolor{preprocessor}{\#include "{}DirHandle.h"{}}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00025}00025 \textcolor{keyword}{namespace }mbed \{}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00033}\mbox{\hyperlink{classmbed_1_1_file_system_like}{00033}} \textcolor{keyword}{class }\mbox{\hyperlink{classmbed_1_1_file_system_like}{FileSystemLike}} : \textcolor{keyword}{public} \mbox{\hyperlink{classmbed_1_1_file_base}{FileBase}} \{}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00035}00035 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00040}\mbox{\hyperlink{classmbed_1_1_file_system_like_adaf42774569bda270f4f686623722b19}{00040}}     \mbox{\hyperlink{classmbed_1_1_file_system_like_adaf42774569bda270f4f686623722b19}{FileSystemLike}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *name);}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00042}00042     \textcolor{keyword}{virtual} \mbox{\hyperlink{classmbed_1_1_file_system_like}{\string~FileSystemLike}}();}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00044}00044     \textcolor{keyword}{static} \mbox{\hyperlink{classmbed_1_1_dir_handle}{DirHandle}} *opendir();}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00045}00045     \textcolor{keyword}{friend} \textcolor{keyword}{class }BaseDirHandle;}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00057}\mbox{\hyperlink{classmbed_1_1_file_system_like_a1283408c952faf4d0872a0a96361fe7c}{00057}}     \textcolor{keyword}{virtual} \mbox{\hyperlink{classmbed_1_1_file_handle}{FileHandle}} *\mbox{\hyperlink{classmbed_1_1_file_system_like_a1283408c952faf4d0872a0a96361fe7c}{open}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *filename, \textcolor{keywordtype}{int} flags) = 0;}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00064}\mbox{\hyperlink{classmbed_1_1_file_system_like_af3db57c1a612e1ca59c88da3488194ee}{00064}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{classmbed_1_1_file_system_like_af3db57c1a612e1ca59c88da3488194ee}{remove}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *filename) \{ \textcolor{keywordflow}{return} -\/1; \};}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00075}\mbox{\hyperlink{classmbed_1_1_file_system_like_a32cef6f224a3fa357d8e7e1d59002f16}{00075}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{classmbed_1_1_file_system_like_a32cef6f224a3fa357d8e7e1d59002f16}{rename}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *oldname, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *newname) \{ \textcolor{keywordflow}{return} -\/1; \};}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00086}\mbox{\hyperlink{classmbed_1_1_file_system_like_a34bf769cc9ee447af685a10bd0ae3758}{00086}}     \textcolor{keyword}{virtual} \mbox{\hyperlink{classmbed_1_1_dir_handle}{DirHandle}} *\mbox{\hyperlink{classmbed_1_1_file_system_like_a34bf769cc9ee447af685a10bd0ae3758}{opendir}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *name) \{ \textcolor{keywordflow}{return} NULL; \};}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00097}\mbox{\hyperlink{classmbed_1_1_file_system_like_ac397d79d5aead33cdda1070ef3f56b38}{00097}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{classmbed_1_1_file_system_like_ac397d79d5aead33cdda1070ef3f56b38}{mkdir}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *name, mode\_t mode) \{ \textcolor{keywordflow}{return} -\/1; \}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00099}00099     \textcolor{comment}{// TODO other filesystem functions (mkdir, rm, rn, ls etc)}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00100}00100 \};}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00102}00102 \} \textcolor{comment}{// namespace mbed}}
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_file_system_like_8h_source_l00104}00104 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

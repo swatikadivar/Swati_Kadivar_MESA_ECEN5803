@@ -1,0 +1,85 @@
+\hypertarget{objects_8h_source}{}\doxysection{objects.\+h}
+\label{objects_8h_source}\index{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/objects.h@{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/objects.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_OBJECTS\_H}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_OBJECTS\_H}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}cmsis.h"{}}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00020}00020 \textcolor{preprocessor}{\#include "{}PortNames.h"{}}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00021}00021 \textcolor{preprocessor}{\#include "{}PeripheralNames.h"{}}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00022}00022 \textcolor{preprocessor}{\#include "{}PinNames.h"{}}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00024}00024 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00025}00025 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00026}00026 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00028}00028 \textcolor{preprocessor}{\#ifdef TARGET\_KL46Z}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00029}00029 \textcolor{preprocessor}{\#define UARTLP\_Type UART0\_Type}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00030}00030 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00032}\mbox{\hyperlink{structgpio__irq__s}{00032}} \textcolor{keyword}{struct }\mbox{\hyperlink{structgpio__irq__s}{gpio\_irq\_s}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00033}00033     uint32\_t port;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00034}00034     uint32\_t pin;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00035}00035     uint32\_t ch;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00036}00036 \};}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00038}\mbox{\hyperlink{structport__s}{00038}} \textcolor{keyword}{struct }\mbox{\hyperlink{structport__s}{port\_s}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00039}00039     \mbox{\hyperlink{core__cm0_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} uint32\_t *reg\_dir;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00040}00040     \mbox{\hyperlink{core__cm0_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} uint32\_t *reg\_out;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00041}00041     \mbox{\hyperlink{core__cm0_8h_af63697ed9952cc71e1225efe205f6cd3}{\_\_I}}  uint32\_t *reg\_in;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00042}00042     PortName port;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00043}00043     uint32\_t mask;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00044}00044 \};}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00046}\mbox{\hyperlink{structpwmout__s}{00046}} \textcolor{keyword}{struct }\mbox{\hyperlink{structpwmout__s}{pwmout\_s}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00047}00047     \mbox{\hyperlink{core__cm0_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} uint32\_t *MOD;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00048}00048     \mbox{\hyperlink{core__cm0_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} uint32\_t *CNT;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00049}00049     \mbox{\hyperlink{core__cm0_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} uint32\_t *CnV;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00050}00050 \};}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00052}\mbox{\hyperlink{structserial__s}{00052}} \textcolor{keyword}{struct }\mbox{\hyperlink{structserial__s}{serial\_s}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00053}00053     \mbox{\hyperlink{struct_u_a_r_t_l_p___type}{UARTLP\_Type}} *uart;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00054}00054     \textcolor{keywordtype}{int} index;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00055}00055 \};}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00057}\mbox{\hyperlink{structanalogin__s}{00057}} \textcolor{keyword}{struct }\mbox{\hyperlink{structanalogin__s}{analogin\_s}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00058}00058     ADCName adc;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00059}00059 \};}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00061}\mbox{\hyperlink{structdac__s}{00061}} \textcolor{keyword}{struct }\mbox{\hyperlink{structdac__s}{dac\_s}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00062}00062     DACName dac;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00063}00063 \};}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00065}\mbox{\hyperlink{structi2c__s}{00065}} \textcolor{keyword}{struct }\mbox{\hyperlink{structi2c__s}{i2c\_s}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00066}00066     \mbox{\hyperlink{struct_i2_c___type}{I2C\_Type}} *i2c;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00067}00067 \};}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00069}\mbox{\hyperlink{structspi__s}{00069}} \textcolor{keyword}{struct }\mbox{\hyperlink{structspi__s}{spi\_s}} \{}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00070}00070     \mbox{\hyperlink{struct_s_p_i___type}{SPI\_Type}} *spi;}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00071}00071 \};}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00073}00073 \textcolor{preprocessor}{\#include "{}gpio\_object.h"{}}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00075}00075 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00076}00076 \}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00077}00077 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{objects_8h_source_l00079}00079 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

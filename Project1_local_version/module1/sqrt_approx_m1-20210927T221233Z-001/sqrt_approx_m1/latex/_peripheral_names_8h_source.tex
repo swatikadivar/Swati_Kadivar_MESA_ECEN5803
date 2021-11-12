@@ -1,0 +1,125 @@
+\hypertarget{_peripheral_names_8h_source}{}\doxysection{Peripheral\+Names.\+h}
+\label{_peripheral_names_8h_source}\index{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/TARGET\_KL25Z/PeripheralNames.h@{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/TARGET\_KL25Z/PeripheralNames.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_PERIPHERALNAMES\_H}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_PERIPHERALNAMES\_H}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}cmsis.h"{}}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00022}00022 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00023}00023 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00025}00025 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00026}00026     OSC32KCLK = 0,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00027}00027     RTC\_CLKIN = 2}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00028}00028 \} RTCName;}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00030}00030 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00031}00031     UART\_0 = (int)\mbox{\hyperlink{group___u_a_r_t_l_p___peripheral___access___layer_ga7a07348b4332ff6b88abf6092347deba}{UART0\_BASE}},}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00032}00032     UART\_1 = (\textcolor{keywordtype}{int})\mbox{\hyperlink{group___u_a_r_t___peripheral___access___layer_ga383bf0c4670c3a7fa72df80f66331a46}{UART1\_BASE}},}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00033}00033     UART\_2 = (int)\mbox{\hyperlink{group___u_a_r_t___peripheral___access___layer_gac9998d643534960b684d45a60b998421}{UART2\_BASE}}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00034}00034 \} UARTName;}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00035}00035 \textcolor{preprocessor}{\#define STDIO\_UART\_TX     USBTX}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00036}00036 \textcolor{preprocessor}{\#define STDIO\_UART\_RX     USBRX}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00037}00037 \textcolor{preprocessor}{\#define STDIO\_UART        UART\_0}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00039}00039 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00040}00040     I2C\_0 = (int)\mbox{\hyperlink{group___i2_c___peripheral___access___layer_gabf0928baf4e4350633ca9050b65d1939}{I2C0\_BASE}},}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00041}00041     I2C\_1 = (\textcolor{keywordtype}{int})\mbox{\hyperlink{group___i2_c___peripheral___access___layer_gacd72dbffb1738ca87c838545c4eb85a3}{I2C1\_BASE}},}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00042}00042 \} I2CName;}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00044}00044 \textcolor{preprocessor}{\#define TPM\_SHIFT   8}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00045}00045 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00046}00046     PWM\_1  = (0 << TPM\_SHIFT) | (0),  \textcolor{comment}{// TPM0 CH0}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00047}00047     PWM\_2  = (0 << TPM\_SHIFT) | (1),  \textcolor{comment}{// TPM0 CH1}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00048}00048     PWM\_3  = (0 << TPM\_SHIFT) | (2),  \textcolor{comment}{// TPM0 CH2}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00049}00049     PWM\_4  = (0 << TPM\_SHIFT) | (3),  \textcolor{comment}{// TPM0 CH3}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00050}00050     PWM\_5  = (0 << TPM\_SHIFT) | (4),  \textcolor{comment}{// TPM0 CH4}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00051}00051     PWM\_6  = (0 << TPM\_SHIFT) | (5),  \textcolor{comment}{// TPM0 CH5}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00053}00053     PWM\_7  = (1 << TPM\_SHIFT) | (0),  \textcolor{comment}{// TPM1 CH0}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00054}00054     PWM\_8  = (1 << TPM\_SHIFT) | (1),  \textcolor{comment}{// TPM1 CH1}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00056}00056     PWM\_9  = (2 << TPM\_SHIFT) | (0),  \textcolor{comment}{// TPM2 CH0}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00057}00057     PWM\_10 = (2 << TPM\_SHIFT) | (1)   \textcolor{comment}{// TPM2 CH1}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00058}00058 \} PWMName;}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00060}00060 \textcolor{preprocessor}{\#define CHANNELS\_A\_SHIFT    5}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00061}00061 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00062}00062     ADC0\_SE0  =  0,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00063}00063     ADC0\_SE3  =  3,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00064}00064     ADC0\_SE4a =  (1 << CHANNELS\_A\_SHIFT) | (4),}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00065}00065     ADC0\_SE4b =  4,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00066}00066     ADC0\_SE5b =  5,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00067}00067     ADC0\_SE6b =  6,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00068}00068     ADC0\_SE7a =  (1 << CHANNELS\_A\_SHIFT) | (7),}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00069}00069     ADC0\_SE7b =  7,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00070}00070     ADC0\_SE8  =  8,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00071}00071     ADC0\_SE9  =  9,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00072}00072     ADC0\_SE11 = 11,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00073}00073     ADC0\_SE12 = 12,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00074}00074     ADC0\_SE13 = 13,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00075}00075     ADC0\_SE14 = 14,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00076}00076     ADC0\_SE15 = 15,}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00077}00077     ADC0\_SE23 = 23}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00078}00078 \} ADCName;}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00080}00080 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00081}00081     DAC\_0 = 0}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00082}00082 \} DACName;}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00085}00085 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00086}00086     SPI\_0 = (int)\mbox{\hyperlink{group___s_p_i___peripheral___access___layer_gadeaa49ab944c7dcae2a868b0450232c8}{SPI0\_BASE}},}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00087}00087     SPI\_1 = (\textcolor{keywordtype}{int})\mbox{\hyperlink{group___s_p_i___peripheral___access___layer_ga50cd8b47929f18b05efbd0f41253bf8d}{SPI1\_BASE}},}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00088}00088 \} SPIName;}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00090}00090 \textcolor{comment}{// Default peripherals}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00091}00091 \textcolor{preprocessor}{\#define MBED\_SPI0         PTD2, PTD3, PTD1, PTD0}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00093}00093 \textcolor{preprocessor}{\#define MBED\_UART0        PTC4, PTC3}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00094}00094 \textcolor{preprocessor}{\#define MBED\_UART1        PTD3, PTD2}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00095}00095 \textcolor{preprocessor}{\#define MBED\_UARTUSB      PTA2, PTA1}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00097}00097 \textcolor{preprocessor}{\#define MBED\_I2C0         PTC9, PTC8}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00098}00098 \textcolor{preprocessor}{\#define MBED\_I2C1         PTE1, PTE0}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00100}00100 \textcolor{preprocessor}{\#define MBED\_ANALOGOUT0   PTE30}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00102}00102 \textcolor{preprocessor}{\#define MBED\_ANALOGIN0    PTC2}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00103}00103 \textcolor{preprocessor}{\#define MBED\_ANALOGIN1    PTB3}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00104}00104 \textcolor{preprocessor}{\#define MBED\_ANALOGIN2    PTB2}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00105}00105 \textcolor{preprocessor}{\#define MBED\_ANALOGIN3    PTB1}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00106}00106 \textcolor{preprocessor}{\#define MBED\_ANALOGIN4    PTB0}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00108}00108 \textcolor{preprocessor}{\#define MBED\_PWMOUT0      PTD4}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00109}00109 \textcolor{preprocessor}{\#define MBED\_PWMOUT1      PTA12}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00110}00110 \textcolor{preprocessor}{\#define MBED\_PWMOUT2      PTA4}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00111}00111 \textcolor{preprocessor}{\#define MBED\_PWMOUT3      PTA5}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00112}00112 \textcolor{preprocessor}{\#define MBED\_PWMOUT4      PTC8}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00113}00113 \textcolor{preprocessor}{\#define MBED\_PWMOUT5      PTC9}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00115}00115 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00116}00116 \}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00117}00117 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{_peripheral_names_8h_source_l00119}00119 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

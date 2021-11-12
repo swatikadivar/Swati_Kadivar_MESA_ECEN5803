@@ -1,0 +1,64 @@
+\hypertarget{device_8h_source}{}\doxysection{device.\+h}
+\label{device_8h_source}\index{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/TARGET\_KL25Z/device.h@{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/TARGET\_KL25Z/device.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_DEVICE\_H}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_DEVICE\_H}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00019}00019 \textcolor{preprocessor}{\#define DEVICE\_PORTIN           1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00020}00020 \textcolor{preprocessor}{\#define DEVICE\_PORTOUT          1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00021}00021 \textcolor{preprocessor}{\#define DEVICE\_PORTINOUT        1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00023}00023 \textcolor{preprocessor}{\#define DEVICE\_INTERRUPTIN      1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00025}00025 \textcolor{preprocessor}{\#define DEVICE\_ANALOGIN         1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00026}00026 \textcolor{preprocessor}{\#define DEVICE\_ANALOGOUT        1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00028}00028 \textcolor{preprocessor}{\#define DEVICE\_SERIAL           1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00030}00030 \textcolor{preprocessor}{\#define DEVICE\_I2C              1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00031}00031 \textcolor{preprocessor}{\#define DEVICE\_I2CSLAVE         1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00033}00033 \textcolor{preprocessor}{\#define DEVICE\_SPI              1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00034}00034 \textcolor{preprocessor}{\#define DEVICE\_SPISLAVE         1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00036}00036 \textcolor{preprocessor}{\#define DEVICE\_CAN              0}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00038}00038 \textcolor{preprocessor}{\#define DEVICE\_RTC              1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00040}00040 \textcolor{preprocessor}{\#define DEVICE\_ETHERNET         0}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00042}00042 \textcolor{preprocessor}{\#define DEVICE\_PWMOUT           1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00044}00044 \textcolor{preprocessor}{\#define DEVICE\_SEMIHOST         1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00045}00045 \textcolor{preprocessor}{\#define DEVICE\_LOCALFILESYSTEM  0}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00046}00046 \textcolor{preprocessor}{\#define DEVICE\_ID\_LENGTH       24}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00048}00048 \textcolor{preprocessor}{\#define DEVICE\_SLEEP            1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00050}00050 \textcolor{preprocessor}{\#define DEVICE\_DEBUG\_AWARENESS  0}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00052}00052 \textcolor{preprocessor}{\#define DEVICE\_STDIO\_MESSAGES   1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00054}00054 \textcolor{preprocessor}{\#define DEVICE\_ERROR\_RED        1}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00056}00056 \textcolor{preprocessor}{\#include "{}objects.h"{}}}
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{device_8h_source_l00058}00058 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

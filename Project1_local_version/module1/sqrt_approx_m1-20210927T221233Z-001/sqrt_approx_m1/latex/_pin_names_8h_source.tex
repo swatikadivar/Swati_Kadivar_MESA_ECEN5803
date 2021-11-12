@@ -1,0 +1,260 @@
+\hypertarget{_pin_names_8h_source}{}\doxysection{Pin\+Names.\+h}
+\label{_pin_names_8h_source}\index{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/TARGET\_KL25Z/PinNames.h@{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/TARGET\_KL25Z/PinNames.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_PINNAMES\_H}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_PINNAMES\_H}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}cmsis.h"{}}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00022}00022 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00023}00023 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00025}00025 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00026}00026     PIN\_INPUT,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00027}00027     PIN\_OUTPUT}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00028}00028 \} PinDirection;}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00030}00030 \textcolor{preprocessor}{\#define PORT\_SHIFT  12}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00032}00032 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00033}00033     PTA0 = 0x0,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00034}00034     PTA1 = 0x4,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00035}00035     PTA2 = 0x8,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00036}00036     PTA3 = 0xc,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00037}00037     PTA4 = 0x10,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00038}00038     PTA5 = 0x14,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00039}00039     PTA6 = 0x18,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00040}00040     PTA7 = 0x1c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00041}00041     PTA8 = 0x20,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00042}00042     PTA9 = 0x24,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00043}00043     PTA10 = 0x28,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00044}00044     PTA11 = 0x2c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00045}00045     PTA12 = 0x30,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00046}00046     PTA13 = 0x34,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00047}00047     PTA14 = 0x38,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00048}00048     PTA15 = 0x3c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00049}00049     PTA16 = 0x40,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00050}00050     PTA17 = 0x44,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00051}00051     PTA18 = 0x48,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00052}00052     PTA19 = 0x4c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00053}00053     PTA20 = 0x50,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00054}00054     PTA21 = 0x54,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00055}00055     PTA22 = 0x58,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00056}00056     PTA23 = 0x5c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00057}00057     PTA24 = 0x60,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00058}00058     PTA25 = 0x64,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00059}00059     PTA26 = 0x68,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00060}00060     PTA27 = 0x6c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00061}00061     PTA28 = 0x70,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00062}00062     PTA29 = 0x74,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00063}00063     PTA30 = 0x78,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00064}00064     PTA31 = 0x7c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00065}00065     PTB0 = 0x1000,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00066}00066     PTB1 = 0x1004,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00067}00067     PTB2 = 0x1008,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00068}00068     PTB3 = 0x100c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00069}00069     PTB4 = 0x1010,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00070}00070     PTB5 = 0x1014,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00071}00071     PTB6 = 0x1018,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00072}00072     PTB7 = 0x101c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00073}00073     PTB8 = 0x1020,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00074}00074     PTB9 = 0x1024,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00075}00075     PTB10 = 0x1028,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00076}00076     PTB11 = 0x102c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00077}00077     PTB12 = 0x1030,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00078}00078     PTB13 = 0x1034,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00079}00079     PTB14 = 0x1038,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00080}00080     PTB15 = 0x103c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00081}00081     PTB16 = 0x1040,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00082}00082     PTB17 = 0x1044,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00083}00083     PTB18 = 0x1048,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00084}00084     PTB19 = 0x104c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00085}00085     PTB20 = 0x1050,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00086}00086     PTB21 = 0x1054,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00087}00087     PTB22 = 0x1058,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00088}00088     PTB23 = 0x105c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00089}00089     PTB24 = 0x1060,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00090}00090     PTB25 = 0x1064,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00091}00091     PTB26 = 0x1068,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00092}00092     PTB27 = 0x106c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00093}00093     PTB28 = 0x1070,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00094}00094     PTB29 = 0x1074,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00095}00095     PTB30 = 0x1078,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00096}00096     PTB31 = 0x107c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00097}00097     PTC0 = 0x2000,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00098}00098     PTC1 = 0x2004,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00099}00099     PTC2 = 0x2008,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00100}00100     PTC3 = 0x200c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00101}00101     PTC4 = 0x2010,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00102}00102     PTC5 = 0x2014,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00103}00103     PTC6 = 0x2018,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00104}00104     PTC7 = 0x201c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00105}00105     PTC8 = 0x2020,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00106}00106     PTC9 = 0x2024,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00107}00107     PTC10 = 0x2028,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00108}00108     PTC11 = 0x202c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00109}00109     PTC12 = 0x2030,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00110}00110     PTC13 = 0x2034,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00111}00111     PTC14 = 0x2038,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00112}00112     PTC15 = 0x203c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00113}00113     PTC16 = 0x2040,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00114}00114     PTC17 = 0x2044,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00115}00115     PTC18 = 0x2048,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00116}00116     PTC19 = 0x204c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00117}00117     PTC20 = 0x2050,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00118}00118     PTC21 = 0x2054,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00119}00119     PTC22 = 0x2058,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00120}00120     PTC23 = 0x205c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00121}00121     PTC24 = 0x2060,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00122}00122     PTC25 = 0x2064,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00123}00123     PTC26 = 0x2068,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00124}00124     PTC27 = 0x206c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00125}00125     PTC28 = 0x2070,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00126}00126     PTC29 = 0x2074,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00127}00127     PTC30 = 0x2078,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00128}00128     PTC31 = 0x207c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00129}00129     PTD0 = 0x3000,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00130}00130     PTD1 = 0x3004,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00131}00131     PTD2 = 0x3008,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00132}00132     PTD3 = 0x300c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00133}00133     PTD4 = 0x3010,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00134}00134     PTD5 = 0x3014,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00135}00135     PTD6 = 0x3018,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00136}00136     PTD7 = 0x301c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00137}00137     PTD8 = 0x3020,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00138}00138     PTD9 = 0x3024,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00139}00139     PTD10 = 0x3028,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00140}00140     PTD11 = 0x302c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00141}00141     PTD12 = 0x3030,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00142}00142     PTD13 = 0x3034,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00143}00143     PTD14 = 0x3038,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00144}00144     PTD15 = 0x303c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00145}00145     PTD16 = 0x3040,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00146}00146     PTD17 = 0x3044,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00147}00147     PTD18 = 0x3048,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00148}00148     PTD19 = 0x304c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00149}00149     PTD20 = 0x3050,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00150}00150     PTD21 = 0x3054,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00151}00151     PTD22 = 0x3058,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00152}00152     PTD23 = 0x305c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00153}00153     PTD24 = 0x3060,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00154}00154     PTD25 = 0x3064,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00155}00155     PTD26 = 0x3068,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00156}00156     PTD27 = 0x306c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00157}00157     PTD28 = 0x3070,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00158}00158     PTD29 = 0x3074,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00159}00159     PTD30 = 0x3078,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00160}00160     PTD31 = 0x307c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00161}00161     PTE0 = 0x4000,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00162}00162     PTE1 = 0x4004,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00163}00163     PTE2 = 0x4008,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00164}00164     PTE3 = 0x400c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00165}00165     PTE4 = 0x4010,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00166}00166     PTE5 = 0x4014,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00167}00167     PTE6 = 0x4018,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00168}00168     PTE7 = 0x401c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00169}00169     PTE8 = 0x4020,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00170}00170     PTE9 = 0x4024,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00171}00171     PTE10 = 0x4028,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00172}00172     PTE11 = 0x402c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00173}00173     PTE12 = 0x4030,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00174}00174     PTE13 = 0x4034,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00175}00175     PTE14 = 0x4038,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00176}00176     PTE15 = 0x403c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00177}00177     PTE16 = 0x4040,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00178}00178     PTE17 = 0x4044,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00179}00179     PTE18 = 0x4048,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00180}00180     PTE19 = 0x404c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00181}00181     PTE20 = 0x4050,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00182}00182     PTE21 = 0x4054,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00183}00183     PTE22 = 0x4058,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00184}00184     PTE23 = 0x405c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00185}00185     PTE24 = 0x4060,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00186}00186     PTE25 = 0x4064,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00187}00187     PTE26 = 0x4068,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00188}00188     PTE27 = 0x406c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00189}00189     PTE28 = 0x4070,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00190}00190     PTE29 = 0x4074,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00191}00191     PTE30 = 0x4078,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00192}00192     PTE31 = 0x407c,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00193}00193 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00194}00194     LED\_RED = PTB18,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00195}00195     LED\_GREEN = PTB19,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00196}00196     LED\_BLUE = PTD1,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00198}00198     \textcolor{comment}{// mbed original LED naming}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00199}00199     LED1 = LED\_RED,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00200}00200     LED2 = LED\_GREEN,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00201}00201     LED3 = LED\_BLUE,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00202}00202     LED4 = LED\_BLUE,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00204}00204     \textcolor{comment}{// USB Pins}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00205}00205     USBTX = PTA2,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00206}00206     USBRX = PTA1,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00208}00208     \textcolor{comment}{// Arduino Headers}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00209}00209     D0 = PTA1,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00210}00210     D1 = PTA2,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00211}00211     D2 = PTD4,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00212}00212     D3 = PTA12,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00213}00213     D4 = PTA4,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00214}00214     D5 = PTA5,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00215}00215     D6 = PTC8,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00216}00216     D7 = PTC9,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00217}00217     D8 = PTA13,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00218}00218     D9 = PTD5,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00219}00219     D10 = PTD0,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00220}00220     D11 = PTD2,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00221}00221     D12 = PTD3,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00222}00222     D13 = PTD1,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00223}00223     D14 = PTE0,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00224}00224     D15 = PTE1,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00225}00225 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00226}00226     A0 = PTB0,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00227}00227     A1 = PTB1,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00228}00228     A2 = PTB2,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00229}00229     A3 = PTB3,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00230}00230     A4 = PTC2,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00231}00231     A5 = PTC1,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00233}00233     I2C\_SCL = D15,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00234}00234     I2C\_SDA = D14,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00235}00235 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00236}00236     TSI\_ELEC0 = PTB16,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00237}00237     TSI\_ELEC1 = PTB17,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00238}00238 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00239}00239     \textcolor{comment}{// Not connected}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00240}00240     NC = (int)0xFFFFFFFF}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00241}00241 \} PinName;}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00242}00242 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00243}00243 \textcolor{comment}{/* PullDown not available for KL25 */}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00244}00244 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00245}00245     PullNone = 0,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00246}00246     PullUp = 2,}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00247}00247     PullDefault = PullUp}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00248}00248 \} PinMode;}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00249}00249 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00250}00250 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00251}00251 \}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00252}00252 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00253}00253 }
+\DoxyCodeLine{\Hypertarget{_pin_names_8h_source_l00254}00254 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

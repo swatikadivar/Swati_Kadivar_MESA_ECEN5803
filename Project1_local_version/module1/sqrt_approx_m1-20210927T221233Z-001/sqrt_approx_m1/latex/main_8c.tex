@@ -1,0 +1,101 @@
+\hypertarget{main_8c}{}\doxysection{sqrt\+\_\+approx/main.c File Reference}
+\label{main_8c}\index{sqrt\_approx/main.c@{sqrt\_approx/main.c}}
+
+
+LAB EXERCISE 5.\+2 -\/ SQUARE ROOT APPROXIMATION.  
+
+
+{\ttfamily \#include \char`\"{}stdint.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+asm int \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\+\_\+sqrt}} (int x)
+\begin{DoxyCompactList}\small\item\em my\+\_\+sqrt routine calculates square root of the given input Approximate square root with bisection method. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em Main function Program starts from here. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+LAB EXERCISE 5.\+2 -\/ SQUARE ROOT APPROXIMATION. 
+
+Write an assembly code subroutine to approximate the square root of an argument using the bisection method. All math is done with integers, so the resulting square root will also be an integer 
+
+Definition in file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Main function Program starts from here. 
+
+\DoxyHorRuler{0}
+ \hypertarget{main_8c_autotoc_md1}{}\doxysubsubsection{MAIN function}\label{main_8c_autotoc_md1}
+This program calculates square root of given number. \texorpdfstring{$<$}{<} should be 0
+
+\texorpdfstring{$<$}{<} should be 5
+
+\texorpdfstring{$<$}{<} should be 11
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00087}{87}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\mbox{\Hypertarget{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}\label{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}} 
+\index{main.c@{main.c}!my\_sqrt@{my\_sqrt}}
+\index{my\_sqrt@{my\_sqrt}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{my\_sqrt()}{my\_sqrt()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+asm int my\+\_\+sqrt (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+my\+\_\+sqrt routine calculates square root of the given input Approximate square root with bisection method. 
+
+\begin{DoxyNote}{Note}
+This routine is written in assembly language
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}x\mbox{]}} & input parameter x contains a number of which we want to find sqrt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value will give sqrt of x. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} R6 = x R1 = a = 0 R2 = b = square root of largest possible argument (e.\+g. $\sim$216). R3 = c = -\/1 R5 = c\+\_\+old ~\newline
+
+
+\texorpdfstring{$<$}{<} do \{ ~\newline
+
+
+\texorpdfstring{$<$}{<} c\+\_\+old \texorpdfstring{$<$}{<}-\/ c ~\newline
+ c \texorpdfstring{$<$}{<}-\/ (a+b)/2
+
+\texorpdfstring{$<$}{<} if (c$\ast$c == x) \{
+
+\texorpdfstring{$<$}{<} done = 1
+
+\texorpdfstring{$<$}{<} \} else if (c$\ast$c \texorpdfstring{$<$}{<} x) \{
+
+\texorpdfstring{$<$}{<} a \texorpdfstring{$<$}{<}-\/ c
+
+\texorpdfstring{$<$}{<} \} else \{ b \texorpdfstring{$<$}{<}-\/ c
+
+\texorpdfstring{$<$}{<} \} \} while (!done) \&\& (c != c\+\_\+old)
+
+\texorpdfstring{$<$}{<} return c
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00029}{29}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+

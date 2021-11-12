@@ -1,0 +1,68 @@
+\hypertarget{_bus_in_out_8h_source}{}\doxysection{Bus\+In\+Out.\+h}
+\label{_bus_in_out_8h_source}\index{sqrt\_approx/mbed/BusInOut.h@{sqrt\_approx/mbed/BusInOut.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_BUSINOUT\_H}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_BUSINOUT\_H}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}DigitalInOut.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00021}00021 \textcolor{keyword}{namespace }mbed \{}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00025}\mbox{\hyperlink{classmbed_1_1_bus_in_out}{00025}} \textcolor{keyword}{class }\mbox{\hyperlink{classmbed_1_1_bus_in_out}{BusInOut}} \{}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00027}00027 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00037}\mbox{\hyperlink{classmbed_1_1_bus_in_out_aeb307d492d797e5a10919a92f1da5e31}{00037}}     \mbox{\hyperlink{classmbed_1_1_bus_in_out_aeb307d492d797e5a10919a92f1da5e31}{BusInOut}}(PinName p0, PinName p1 = NC, PinName p2 = NC, PinName p3 = NC,}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00038}00038              PinName p4 = NC, PinName p5 = NC, PinName p6 = NC, PinName p7 = NC,}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00039}00039              PinName p8 = NC, PinName p9 = NC, PinName p10 = NC, PinName p11 = NC,}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00040}00040              PinName p12 = NC, PinName p13 = NC, PinName p14 = NC, PinName p15 = NC);}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00042}00042     \mbox{\hyperlink{classmbed_1_1_bus_in_out_aeb307d492d797e5a10919a92f1da5e31}{BusInOut}}(PinName pins[16]);}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00044}00044     \textcolor{keyword}{virtual} \mbox{\hyperlink{classmbed_1_1_bus_in_out}{\string~BusInOut}}();}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00046}00046     \textcolor{comment}{/* Group: Access Methods */}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00052}\mbox{\hyperlink{classmbed_1_1_bus_in_out_a36473cded1109d3960d51c6f8e1ee123}{00052}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmbed_1_1_bus_in_out_a36473cded1109d3960d51c6f8e1ee123}{write}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00060}\mbox{\hyperlink{classmbed_1_1_bus_in_out_a98154c0add9d2e8bec0e27ca42249b31}{00060}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classmbed_1_1_bus_in_out_a98154c0add9d2e8bec0e27ca42249b31}{read}}();}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00064}\mbox{\hyperlink{classmbed_1_1_bus_in_out_aea68cf05f895ef5d7a6c4a963fe695d4}{00064}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmbed_1_1_bus_in_out_aea68cf05f895ef5d7a6c4a963fe695d4}{output}}();}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00068}\mbox{\hyperlink{classmbed_1_1_bus_in_out_a2f5cdeb39d9f1b2e71281f48ead9090f}{00068}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmbed_1_1_bus_in_out_a2f5cdeb39d9f1b2e71281f48ead9090f}{input}}();}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00074}\mbox{\hyperlink{classmbed_1_1_bus_in_out_ae16e26bbb20523c2ae428db3fca5bb15}{00074}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmbed_1_1_bus_in_out_ae16e26bbb20523c2ae428db3fca5bb15}{mode}}(PinMode pull);}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00076}00076 \textcolor{preprocessor}{\#ifdef MBED\_OPERATORS}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00079}\mbox{\hyperlink{classmbed_1_1_bus_in_out_ac0614da22e30b548c0ab863ade51428b}{00079}}     \mbox{\hyperlink{classmbed_1_1_bus_in_out}{BusInOut}}\& \mbox{\hyperlink{classmbed_1_1_bus_in_out_ac0614da22e30b548c0ab863ade51428b}{operator= }}(\textcolor{keywordtype}{int} v);}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00080}00080     \mbox{\hyperlink{classmbed_1_1_bus_in_out}{BusInOut}}\& \mbox{\hyperlink{classmbed_1_1_bus_in_out_ac0614da22e30b548c0ab863ade51428b}{operator= }}(\mbox{\hyperlink{classmbed_1_1_bus_in_out}{BusInOut}}\& rhs);}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00084}\mbox{\hyperlink{classmbed_1_1_bus_in_out_a63844c4d74e7de4818fa07447c2ba7c2}{00084}}     \textcolor{keyword}{operator} int();}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00085}00085 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00087}00087 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00088}00088     \mbox{\hyperlink{classmbed_1_1_digital_in_out}{DigitalInOut}}* \_pin[16];}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00089}00089 \};}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00091}00091 \} \textcolor{comment}{// namespace mbed}}
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_bus_in_out_8h_source_l00093}00093 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

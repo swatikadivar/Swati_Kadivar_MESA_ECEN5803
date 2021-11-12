@@ -1,0 +1,124 @@
+\hypertarget{clk__freqs_8h_source}{}\doxysection{clk\+\_\+freqs.\+h}
+\label{clk__freqs_8h_source}\index{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/clk\_freqs.h@{sqrt\_approx/mbed/TARGET\_KL25Z/TARGET\_Freescale/TARGET\_KLXX/clk\_freqs.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_CLK\_FREQS\_H}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_CLK\_FREQS\_H}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00019}00019 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00020}00020 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00021}00021 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00023}00023 \textcolor{preprocessor}{\#include "{}PeripheralPins.h"{}}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00025}00025 \textcolor{comment}{//Get the peripheral bus clock frequency}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00026}00026 \textcolor{keyword}{static} \textcolor{keyword}{inline} uint32\_t bus\_frequency(\textcolor{keywordtype}{void}) \{}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00027}00027     \textcolor{keywordflow}{return} SystemCoreClock / (((\mbox{\hyperlink{group___s_i_m___peripheral___access___layer_ga3dd2f4c4bfb41778902b4b5350143d9e}{SIM}}-\/>CLKDIV1 \& SIM\_CLKDIV1\_OUTDIV4\_MASK) >> SIM\_CLKDIV1\_OUTDIV4\_SHIFT) + 1);}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00028}00028 \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00030}00030 \textcolor{comment}{//Get external oscillator (crystal) frequency}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00031}00031 \textcolor{keyword}{static} uint32\_t extosc\_frequency(\textcolor{keywordtype}{void}) \{}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00032}00032     uint32\_t MCGClock = SystemCoreClock * (1u + ((\mbox{\hyperlink{group___s_i_m___peripheral___access___layer_ga3dd2f4c4bfb41778902b4b5350143d9e}{SIM}}-\/>CLKDIV1 \& SIM\_CLKDIV1\_OUTDIV1\_MASK) >> SIM\_CLKDIV1\_OUTDIV1\_SHIFT));}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00034}00034     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C1 \& MCG\_C1\_CLKS\_MASK) == MCG\_C1\_CLKS(2))     \textcolor{comment}{//MCG clock = external reference clock}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00035}00035         \textcolor{keywordflow}{return} MCGClock;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00036}00036     }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00037}00037     uint32\_t divider, multiplier;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00038}00038 \textcolor{preprocessor}{    \#ifdef MCG\_C5\_PLLCLKEN0\_MASK                             }\textcolor{comment}{//PLL available}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00039}00039     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C1 \& MCG\_C1\_CLKS\_MASK) == MCG\_C1\_CLKS(0)) \{   \textcolor{comment}{//PLL/FLL is selected}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00040}00040         \textcolor{keywordflow}{if} ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C6 \& MCG\_C6\_PLLS\_MASK) == 0x0u) \{         \textcolor{comment}{//FLL is selected}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00041}00041 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00042}00042             \textcolor{keywordflow}{if} ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>S \& MCG\_S\_IREFST\_MASK) == 0x0u) \{     \textcolor{comment}{//FLL uses external reference}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00043}00043                 divider = (uint8\_t)(1u << ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C1 \& MCG\_C1\_FRDIV\_MASK) >> MCG\_C1\_FRDIV\_SHIFT));}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00044}00044                 \textcolor{keywordflow}{if} ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C2 \& MCG\_C2\_RANGE0\_MASK) != 0x0u)}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00045}00045                     divider <<= 5u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00046}00046                 \textcolor{comment}{/* Select correct multiplier to calculate the MCG output clock  */}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00047}00047                 \textcolor{keywordflow}{switch} (\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C4 \& (MCG\_C4\_DMX32\_MASK | MCG\_C4\_DRST\_DRS\_MASK)) \{}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00048}00048                     \textcolor{keywordflow}{case} 0x0u:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00049}00049                       multiplier = 640u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00050}00050                       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00051}00051                     \textcolor{keywordflow}{case} 0x20u:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00052}00052                       multiplier = 1280u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00053}00053                       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00054}00054                     \textcolor{keywordflow}{case} 0x40u:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00055}00055                       multiplier = 1920u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00056}00056                       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00057}00057                     \textcolor{keywordflow}{case} 0x60u:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00058}00058                       multiplier = 2560u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00059}00059                       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00060}00060                     \textcolor{keywordflow}{case} 0x80u:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00061}00061                       multiplier = 732u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00062}00062                       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00063}00063                     \textcolor{keywordflow}{case} 0xA0u:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00064}00064                       multiplier = 1464u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00065}00065                       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00066}00066                     \textcolor{keywordflow}{case} 0xC0u:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00067}00067                       multiplier = 2197u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00068}00068                       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00069}00069                     \textcolor{keywordflow}{case} 0xE0u:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00070}00070                     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00071}00071                       multiplier = 2929u;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00072}00072                       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00073}00073                 \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00074}00074                 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00075}00075                 \textcolor{keywordflow}{return} MCGClock * divider / multiplier;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00076}00076             \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00077}00077 \textcolor{preprocessor}{    \#ifdef MCG\_C5\_PLLCLKEN0\_MASK}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00078}00078         \} \textcolor{keywordflow}{else} \{             \textcolor{comment}{//PLL is selected}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00079}00079             divider = (1u + (\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C5 \& MCG\_C5\_PRDIV0\_MASK));}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00080}00080             multiplier = ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C6 \& MCG\_C6\_VDIV0\_MASK) + 24u); }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00081}00081             \textcolor{keywordflow}{return} MCGClock * divider / multiplier;         }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00082}00082         \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00083}00083     \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00084}00084 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00085}00085     }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00086}00086     \textcolor{comment}{//In all other cases either there is no crystal or we cannot determine it}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00087}00087     \textcolor{comment}{//For example when the FLL is running on the internal reference, and there is also an}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00088}00088     \textcolor{comment}{//external crystal. However these are unlikely situations}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00089}00089     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00090}00090 \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00092}00092 \textcolor{comment}{//Get MCG PLL/2 or FLL frequency, depending on which one is active, sets PLLFLLSEL bit}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00093}00093 \textcolor{keyword}{static} uint32\_t mcgpllfll\_frequency(\textcolor{keywordtype}{void}) \{ }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00094}00094     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C1 \& MCG\_C1\_CLKS\_MASK) != MCG\_C1\_CLKS(0))   \textcolor{comment}{//PLL/FLL is not selected}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00095}00095         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00096}00096     }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00097}00097     uint32\_t MCGClock = SystemCoreClock * (1u + ((\mbox{\hyperlink{group___s_i_m___peripheral___access___layer_ga3dd2f4c4bfb41778902b4b5350143d9e}{SIM}}-\/>CLKDIV1 \& SIM\_CLKDIV1\_OUTDIV1\_MASK) >> SIM\_CLKDIV1\_OUTDIV1\_SHIFT));}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00098}00098 \textcolor{preprocessor}{    \#ifdef MCG\_C5\_PLLCLKEN0\_MASK}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00099}00099     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{group___m_c_g___peripheral___access___layer_gad7ea2d93cafdbe9298ef1dd52be44f88}{MCG}}-\/>C6 \& MCG\_C6\_PLLS\_MASK) == 0x0u) \{         \textcolor{comment}{//FLL is selected}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00100}00100         \mbox{\hyperlink{group___s_i_m___peripheral___access___layer_ga3dd2f4c4bfb41778902b4b5350143d9e}{SIM}}-\/>SOPT2 \&= \string~SIM\_SOPT2\_PLLFLLSEL\_MASK;        \textcolor{comment}{//MCG peripheral clock is FLL output}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00101}00101 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00102}00102         \textcolor{keywordflow}{return} MCGClock;}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00103}00103 \textcolor{preprocessor}{    \#ifdef MCG\_C5\_PLLCLKEN0\_MASK}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00104}00104     \} \textcolor{keywordflow}{else} \{                                            \textcolor{comment}{//PLL is selected}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00105}00105         \mbox{\hyperlink{group___s_i_m___peripheral___access___layer_ga3dd2f4c4bfb41778902b4b5350143d9e}{SIM}}-\/>SOPT2 |= SIM\_SOPT2\_PLLFLLSEL\_MASK;         \textcolor{comment}{//MCG peripheral clock is PLL output}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00106}00106         \textcolor{keywordflow}{return} (MCGClock >> 1);}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00108}00108 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00109}00109     }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00110}00110     \textcolor{comment}{//It is possible the SystemCoreClock isn't running on the PLL, and the PLL is still active }}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00111}00111     \textcolor{comment}{//for the peripherals, this is however an unlikely setup}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00112}00112 \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00114}00114 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00115}00115 \}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00116}00116 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{clk__freqs_8h_source_l00118}00118 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

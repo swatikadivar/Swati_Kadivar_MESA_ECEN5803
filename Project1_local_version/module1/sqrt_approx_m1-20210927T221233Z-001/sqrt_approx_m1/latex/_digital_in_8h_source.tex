@@ -1,0 +1,61 @@
+\hypertarget{_digital_in_8h_source}{}\doxysection{Digital\+In.\+h}
+\label{_digital_in_8h_source}\index{sqrt\_approx/mbed/DigitalIn.h@{sqrt\_approx/mbed/DigitalIn.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_DIGITALIN\_H}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_DIGITALIN\_H}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}platform.h"{}}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00021}00021 \textcolor{preprocessor}{\#include "{}gpio\_api.h"{}}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00023}00023 \textcolor{keyword}{namespace }mbed \{}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00046}\mbox{\hyperlink{classmbed_1_1_digital_in}{00046}} \textcolor{keyword}{class }\mbox{\hyperlink{classmbed_1_1_digital_in}{DigitalIn}} \{}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00048}00048 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00053}\mbox{\hyperlink{classmbed_1_1_digital_in_a6593a15bcecfd3666c49bba83c81ee9b}{00053}}     \mbox{\hyperlink{classmbed_1_1_digital_in_a6593a15bcecfd3666c49bba83c81ee9b}{DigitalIn}}(PinName pin) \{}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00054}00054         gpio\_init\_in(\&gpio, pin);}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00055}00055     \}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00062}\mbox{\hyperlink{classmbed_1_1_digital_in_a4f07c90ffec20a9724ef42a61f7d21eb}{00062}}     \mbox{\hyperlink{classmbed_1_1_digital_in_a4f07c90ffec20a9724ef42a61f7d21eb}{DigitalIn}}(PinName pin, PinMode \mbox{\hyperlink{classmbed_1_1_digital_in_a9f3e23f670999a3f0ecb5ad959d1667a}{mode}}) \{}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00063}00063         gpio\_init\_in\_ex(\&gpio, pin, \mbox{\hyperlink{classmbed_1_1_digital_in_a9f3e23f670999a3f0ecb5ad959d1667a}{mode}});}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00071}\mbox{\hyperlink{classmbed_1_1_digital_in_aa19e2bc687842e7a1414ec5599f4f0e9}{00071}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classmbed_1_1_digital_in_aa19e2bc687842e7a1414ec5599f4f0e9}{read}}() \{}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00072}00072         \textcolor{keywordflow}{return} gpio\_read(\&gpio);}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00073}00073     \}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00079}\mbox{\hyperlink{classmbed_1_1_digital_in_a9f3e23f670999a3f0ecb5ad959d1667a}{00079}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmbed_1_1_digital_in_a9f3e23f670999a3f0ecb5ad959d1667a}{mode}}(PinMode pull) \{}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00080}00080         gpio\_mode(\&gpio, pull);}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00081}00081     \}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00083}00083 \textcolor{preprocessor}{\#ifdef MBED\_OPERATORS}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00086}\mbox{\hyperlink{classmbed_1_1_digital_in_add1742ff230f5a6ba35f26056d11b4f6}{00086}}     \textcolor{keyword}{operator} int() \{}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00087}00087         \textcolor{keywordflow}{return} \mbox{\hyperlink{classmbed_1_1_digital_in_aa19e2bc687842e7a1414ec5599f4f0e9}{read}}();}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00088}00088     \}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00089}00089 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00091}00091 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00092}00092     \mbox{\hyperlink{structgpio__t}{gpio\_t}} gpio;}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00093}00093 \};}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00095}00095 \} \textcolor{comment}{// namespace mbed}}
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_digital_in_8h_source_l00097}00097 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

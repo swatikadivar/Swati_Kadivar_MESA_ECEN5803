@@ -1,0 +1,59 @@
+\hypertarget{main_8c_source}{}\doxysection{main.\+c}
+\label{main_8c_source}\index{sqrt\_approx/main.c@{sqrt\_approx/main.c}}
+\mbox{\hyperlink{main_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00011}00011 \textcolor{preprocessor}{ \#include "{}stdint.h"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00013}00013 \textcolor{preprocessor}{ \#include "{}string.h"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00029}\mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{00029}} \_\_asm \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(\textcolor{keywordtype}{int} x)\{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00035}00035     MOV R6, R0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00036}00036     MOVS r1, \#0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00037}00037     MOVS r3, \#0XFF}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00038}00038     MOVS r2, \#255}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00039}00039     MOVS r5, \#0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00041}00041 loop MOV R5,R3}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00044}00044     MOV R0,R1}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00045}00045     ADD R1,R1,R2}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00046}00046     LSRS R1,R1,\#1}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00047}00047     MOV R3,R1}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00048}00048     MOV R1,R0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00050}00050     MOV R0,R3}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00051}00051     MULS R3,R3,R3}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00052}00052     MOV R7,R3}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00053}00053     MOV R3,R0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00054}00054     CMP R7,R6 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00056}00056     BEQ exit\_loop }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00058}00058     CMP R7,R6}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00059}00059     }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00060}00060     BGT GT\_LABEL}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00062}00062     MOV R1,R3}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00063}00063     B COMP\_DONE}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00066}00066 GT\_LABEL MOV R2,R3}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00069}00069 COMP\_DONE CMP R5,R3}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00070}00070     BNE loop        }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00072}00072 exit\_loop BX LR}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00073}00073 \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00074}00074     }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00087}\mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{00087}} \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00088}00088     \textcolor{keyword}{volatile} \textcolor{keywordtype}{int} r1, r2, r3, a, b, c, d, j=0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00089}00089     \textcolor{keywordtype}{int} i;                  }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00090}00090     r1 = \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(0);     }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00091}00091     r2 = \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(25);    }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00092}00092     r3 = \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(133);    }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00093}00093     a = \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(2);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00094}00094     b = \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(4);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00095}00095     c = \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(22);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00096}00096     d = \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(121);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00097}00097     }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00098}00098     \textcolor{keywordflow}{for} (i=0; i<10000; i++)\{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00099}00099         r = \mbox{\hyperlink{main_8c_ab530b5c5abd6ec3f886f2b48e3905ee1}{my\_sqrt}}(i);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00100}00100         j+=r;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00101}00101     \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00102}00102     \textcolor{keywordflow}{while}(1)}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00103}00103         ;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00104}00104 \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00106}00106 \textcolor{comment}{// *******************************ARM University Program Copyright © ARM Ltd 2014*************************************/}}
+
+\end{DoxyCode}

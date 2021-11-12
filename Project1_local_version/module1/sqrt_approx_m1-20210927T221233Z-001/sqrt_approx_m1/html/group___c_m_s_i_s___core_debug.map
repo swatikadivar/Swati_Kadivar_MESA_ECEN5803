@@ -1,0 +1,6 @@
+<map id="Core Debug Registers (CoreDebug)" name="Core Debug Registers (CoreDebug)">
+<area shape="rect" id="node1" title="Cortex&#45;M0 Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not ..." alt="" coords="188,37,337,77"/>
+<area shape="rect" id="node4" href="$group___c_m_s_i_s__core__base.html" title="Definitions for base addresses, unions, and structures." alt="" coords="385,45,499,70"/>
+<area shape="rect" id="node2" href="$group___c_m_s_i_s___sys_tick.html" title="Type definitions for the System Timer Registers." alt="" coords="5,5,140,45"/>
+<area shape="rect" id="node3" href="$group___c_m_s_i_s___t_p_i.html" title="Type definitions for the Trace Port Interface (TPI)" alt="" coords="5,69,140,109"/>
+</map>

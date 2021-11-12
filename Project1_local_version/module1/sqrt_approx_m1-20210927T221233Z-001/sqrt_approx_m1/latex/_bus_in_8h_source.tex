@@ -1,0 +1,58 @@
+\hypertarget{_bus_in_8h_source}{}\doxysection{Bus\+In.\+h}
+\label{_bus_in_8h_source}\index{sqrt\_approx/mbed/BusIn.h@{sqrt\_approx/mbed/BusIn.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00001}00001 \textcolor{comment}{/* mbed Microcontroller Library}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00002}00002 \textcolor{comment}{ * Copyright (c) 2006-\/2013 ARM Limited}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00004}00004 \textcolor{comment}{ * Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00005}00005 \textcolor{comment}{ * you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00006}00006 \textcolor{comment}{ * You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00007}00007 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00008}00008 \textcolor{comment}{ *     http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00009}00009 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00010}00010 \textcolor{comment}{ * Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00011}00011 \textcolor{comment}{ * distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00012}00012 \textcolor{comment}{ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00013}00013 \textcolor{comment}{ * See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00014}00014 \textcolor{comment}{ * limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00015}00015 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00016}00016 \textcolor{preprocessor}{\#ifndef MBED\_BUSIN\_H}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00017}00017 \textcolor{preprocessor}{\#define MBED\_BUSIN\_H}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}platform.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00020}00020 \textcolor{preprocessor}{\#include "{}DigitalIn.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00022}00022 \textcolor{keyword}{namespace }mbed \{}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00026}\mbox{\hyperlink{classmbed_1_1_bus_in}{00026}} \textcolor{keyword}{class }\mbox{\hyperlink{classmbed_1_1_bus_in}{BusIn}} \{}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00028}00028 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00029}00029     \textcolor{comment}{/* Group: Configuration Methods */}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00039}\mbox{\hyperlink{classmbed_1_1_bus_in_a60e8a1d93b93bb565d7f6fafacdf6a4b}{00039}}     \mbox{\hyperlink{classmbed_1_1_bus_in_a60e8a1d93b93bb565d7f6fafacdf6a4b}{BusIn}}(PinName p0, PinName p1 = NC, PinName p2 = NC, PinName p3 = NC,}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00040}00040           PinName p4 = NC, PinName p5 = NC, PinName p6 = NC, PinName p7 = NC,}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00041}00041           PinName p8 = NC, PinName p9 = NC, PinName p10 = NC, PinName p11 = NC,}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00042}00042           PinName p12 = NC, PinName p13 = NC, PinName p14 = NC, PinName p15 = NC);}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00044}00044     \mbox{\hyperlink{classmbed_1_1_bus_in_a60e8a1d93b93bb565d7f6fafacdf6a4b}{BusIn}}(PinName pins[16]);}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00046}00046     \textcolor{keyword}{virtual} \mbox{\hyperlink{classmbed_1_1_bus_in}{\string~BusIn}}();}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00053}\mbox{\hyperlink{classmbed_1_1_bus_in_aad43475895a43bca659aef8a81dc4478}{00053}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classmbed_1_1_bus_in_aad43475895a43bca659aef8a81dc4478}{read}}();}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00054}00054     }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00059}\mbox{\hyperlink{classmbed_1_1_bus_in_a93eed47467fec29854399cb7606a123b}{00059}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmbed_1_1_bus_in_a93eed47467fec29854399cb7606a123b}{mode}}(PinMode pull);}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00060}00060     }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00061}00061 \textcolor{preprocessor}{\#ifdef MBED\_OPERATORS}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00064}\mbox{\hyperlink{classmbed_1_1_bus_in_adb47444fdd5d8928923b39edaa247963}{00064}}     \textcolor{keyword}{operator} int();}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00065}00065 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00067}00067 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00068}00068     \mbox{\hyperlink{classmbed_1_1_digital_in}{DigitalIn}}* \_pin[16];}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00069}00069 \};}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00071}00071 \} \textcolor{comment}{// namespace mbed}}
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_bus_in_8h_source_l00073}00073 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
